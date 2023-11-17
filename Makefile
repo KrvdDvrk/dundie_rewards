@@ -1,5 +1,8 @@
 .PHONY: installdev installtest virtualenv ipython clean test watch
 
+makeinstall:
+	@pip install -e .
+
 installdev:
 	@echo "Installing for dev enviroment"
 	@pip install -r requirements_dev.text
