@@ -5,11 +5,11 @@ install:
 
 installdev:
 	@echo "Installing for dev enviroment"
-	@pip install -r requirements_dev.text
+	@pip install -r requirements.dev.text
 
 installtest:
 	@echo "Installing for test enviroment"
-	@pip install -r requirements_test.txt
+	@pip install -r requirements.test.txt
 
 virtualenv:
 	@.venv/bin/python -m pip -m venv .venv
