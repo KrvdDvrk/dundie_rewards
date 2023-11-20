@@ -1,4 +1,0 @@
-pytest
-
-# Install project as editable
--e .
