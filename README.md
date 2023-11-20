@@ -19,9 +19,7 @@ pip install KrvdDvrk-dundie```
 ```py
 pip instal -e .[dev]
 or
-pip install -r requeriments.txt
-pip install -r requeriments_test.txt
-pip install -r requeriments_dev.txt
+pip instal -e .[test]
 ```
 
 # Usage
