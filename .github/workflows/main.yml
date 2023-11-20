@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.7', '3.9', '3.10']
+        python-version: ['3.9', '3.10']
         os: [ubuntu-latest]
     runs-on: ${{matrix.os}}
     steps:
@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: ${{matrix.python-version}}
       - name: Install Project
-        run: python -m pip install -e .[dev]
+        run: pip install -e .[test]
       - name: Run tests
         run: pytest -vv tests integration
 
