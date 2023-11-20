@@ -1,15 +1,17 @@
 .PHONY: install installdev installtest virtualenv ipython clean test watch
 
 install:
-	@.venv/bin/python -m pip install -e '.[dev]'
+	@.venv/bin/python -m pip install -e .
 
 installdev:
 	@echo "Installing for dev enviroment"
-	@pip install -r requirements.dev.text
+	# @pip install -r requirements_dev.text
+	@.venv/bin/python -m pip install -e .[dev]
 
 installtest:
 	@echo "Installing for test enviroment"
-	@pip install -r requirements.test.txt
+	# @pip install -r requirements_test.txt
+	@.venv/bin/python -m pip install -e .[test]
 
 virtualenv:
 	@.venv/bin/python -m pip -m venv .venv
@@ -21,7 +23,7 @@ test:
 	@.venv/bin/pytest -s
 
 watch:
-	@ls **/*.py | entr pytest
+	# @ls **/*.py | entr pytest
 
 clean:
 	@find ./ - name '*.pyc' -exec rm -f {} \;
