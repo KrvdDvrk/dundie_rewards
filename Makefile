@@ -1,7 +1,7 @@
-.PHONY: installdev installtest virtualenv ipython clean test watch
+.PHONY: install installdev installtest virtualenv ipython clean test watch
 
 install:
-	@.venv/bin/python -m pip install -e .
+	@.venv/bin/python -m pip install -e '.[dev]'
 
 installdev:
 	@echo "Installing for dev enviroment"
@@ -21,8 +21,7 @@ test:
 	@.venv/bin/pytest -s
 
 watch:
-	# @.venv/bin/ptw
-	ls **/*.py | entr pytest
+	@ls **/*.py | entr pytest
 
 clean:
 	@find ./ - name '*.pyc' -exec rm -f {} \;

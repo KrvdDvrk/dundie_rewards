@@ -20,7 +20,7 @@ def read_requirements(path):
     return [
         line.strip()
         for line in read(path).split("\n")
-        if not line.startswith("#", "git+", '""', "-")
+        if not line.startswith("#", "git+", '"', "-")
     ]
 
 
@@ -31,7 +31,7 @@ setup(
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="KrvdDvrk",
-    pyhton_requires=">=3.8",
+    pyhton_requires=">=3.7",
     packages=find_packages(),
     entry_points={
         "console_scripts": [
@@ -40,8 +40,8 @@ setup(
     },
     install_requires=read_requirements("requirements.txt"),
     extras_require={
-        "test": read_requirements("requirements_test.txt"),
-        "dev": read_requirements("requirements_dev.txt")
+        "test": read_requirements("requirements.test.txt"),
+        "dev": read_requirements("requirements.dev.txt")
     }
 )
 
