@@ -14,7 +14,7 @@ Os dados dos funcionários atuais serão fornecidos em um arquivo que pode ser n
 # Installation
 
 ```py
-pip install KrvdDvrk-dundie```
+pip install KrvdDvrk-dundie ```
 
 ```py
 pip instal -e .[dev]
