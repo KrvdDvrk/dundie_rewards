@@ -5,23 +5,23 @@ install:
 
 installdev:
 	@echo "Installing for dev enviroment"
-	@.venv3/bin/python -m pip install -e .[dev]
+	@.venv/bin/python -m pip install -e .[dev]
 
 installtest:
 	@echo "Installing for test enviroment"
-	@.venv3/bin/python -m pip install -e .[test]
+	@.venv/bin/python -m pip install -e .[test]
 
 pipupgrade:
 	@pip install --upgrade pip
 
 virtualenv:
-	@.venv3/bin/python -m pip -m venv .venv
+	@.venv/bin/python3 -m pip -m venv .venv
 
 ipython:
-	@.venv3/bin/ipython
+	@.venv/bin/ipython
 
 test:
-	@.venv3/bin/pytest -s
+	@.venv/bin/pytest -s
 
 watch:
 	# @ls **/*.py | entr pytest
