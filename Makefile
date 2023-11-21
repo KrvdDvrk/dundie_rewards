@@ -1,7 +1,7 @@
-.PHONY: install installdev installtest pipupgrade virtualenv ipython clean test watch
+.PHONY: install installdev installtest virtualenv ipython clean test watch
 
 install:
-	@.venv/bin/python -m pip install -e .
+	@.venv/bin/python -m pip install -e
 
 installdev:
 	@echo "Installing for dev enviroment"
@@ -9,13 +9,10 @@ installdev:
 
 installtest:
 	@echo "Installing for test enviroment"
-	@.venv/bin/python -m pip install -e .[test]
-
-pipupgrade:
-	@pip install --upgrade pip
+	@.venv/bin/python3 -m pip install -e .[test]
 
 virtualenv:
-	@.venv/bin/python3 -m pip -m venv .venv
+	@.venv/bin/python -m pip -m venv .venv
 
 ipython:
 	@.venv/bin/ipython
