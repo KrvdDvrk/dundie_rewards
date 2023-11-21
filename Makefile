@@ -9,7 +9,7 @@ installdev:
 
 installtest:
 	@echo "Installing for test enviroment"
-	@.venv/bin/python -m pip install -e .[test]
+	@.venv/bin/python3 -m pip install -e .[test]
 
 virtualenv:
 	@.venv/bin/python -m pip -m venv .venv
