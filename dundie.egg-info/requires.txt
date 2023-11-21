@@ -1,0 +1,8 @@
+
+[dev]
+ipdb
+ipython<=8.0.0
+pudb
+
+[test]
+pytest
