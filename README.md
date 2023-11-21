@@ -23,8 +23,3 @@ pip install -e .[dev]
 or
 pip install -e .[test]
 ```
-
-# Usage
-
-```py
-dundie load assets/people.csv
