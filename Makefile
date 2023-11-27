@@ -1,4 +1,4 @@
-.PHONY: install installdev installtest virtualenv ipython clean test watch
+.PHONY: install installdev installtest virtualenv ipython clean test testci watch
 
 install:
 	@.venv/bin/python -m pip install -e .
@@ -19,6 +19,9 @@ ipython:
 
 test:
 	@.venv/bin/pytest -s
+
+testci:
+	@.venv/bin/pytest -v --junitxml=test-result.xml
 
 watch:
 	# @ls **/*.py | entr pytest

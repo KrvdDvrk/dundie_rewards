@@ -1,4 +1,4 @@
-#!/home/krvd_hvckcxmmvndxr/ProjetosPy/dundie_rewards/.venv/bin/python
+#!/home/krvd_hvckcxmmvndxr/pyprojects/dundie_rewards/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
