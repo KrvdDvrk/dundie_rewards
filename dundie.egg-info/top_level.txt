@@ -1,3 +1,0 @@
-dundie
-integration
-tests
