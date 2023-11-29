@@ -6,3 +6,6 @@ testpaths = [
     "integration",
 ]
 
+[tool.flake8]
+exclude = [".venv", "build"]
+max-line-length = 79

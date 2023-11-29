@@ -1,5 +1,6 @@
 import os
-from setuptools import setup, find_packages
+
+from setuptools import find_packages, setup
 
 
 def read(*paths):
@@ -33,21 +34,12 @@ setup(
     author="KrvdDvrk",
     pyhton_requires=">=3.7",
     packages=find_packages(),
-    entry_points={
-        "console_scripts": [
-            "dundie = dundie.__main__:main"
-        ]
-    },
+    entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
     install_requires=[],
     extras_require={
         "test": [
             "pytest",
         ],
-        "dev": [
-            "ipdb",
-            "ipython<=8.0.0",
-            "pudb"
-        ]
-    }
+        "dev": ["ipdb", "ipython<=8.0.0", "pudb"],
+    },
 )
-

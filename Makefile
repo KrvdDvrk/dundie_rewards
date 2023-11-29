@@ -1,4 +1,4 @@
-.PHONY: install installdev installtest virtualenv ipython clean test watch
+.PHONY: install installdev installtest virtualenv ipython pflake8 clean test watch
 
 install:
 	@.venv/bin/python -m pip install -e .
@@ -16,6 +16,9 @@ virtualenv:
 
 ipython:
 	@.venv/bin/ipython
+
+lint:
+	@.venv/bin/pflake8
 
 test:
 	@.venv/bin/pytest -s
