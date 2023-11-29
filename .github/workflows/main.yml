@@ -27,7 +27,7 @@ jobs:
       - name: Install Project
         run: pip install '.[test]'
       - name: Look for style errors
-        run: flake8
+        run: pflake8
 
 
   tests:
