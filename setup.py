@@ -37,7 +37,7 @@ setup(
     entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
     install_requires=[],
     extras_require={
-        "test": ["pytest", "flake8", "pyproject-flake8"],
-        "dev": ["ipdb", "ipython<=8.0.0", "pudb"],
+        "test": ["pytest", "flake8", "pyproject-flake8", "black", "isort"],
+        "dev": ["ipdb", "ipython<=8.0.0", "pudb", "flake8", "pflake8", "black", "isort"],
     },
 )
