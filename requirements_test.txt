@@ -1,4 +1,6 @@
 pytest
+flake8
+pyproject-flake-8
 
 # Install project as editable
 -e .

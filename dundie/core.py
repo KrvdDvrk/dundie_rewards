@@ -3,8 +3,9 @@ from dundie.utils.log import get_logger
 
 log = get_logger()
 
+
 def load(filepath):
-    """ # docstring
+    """# docstring
     Loads data from filepath to the database.
 
     # doctest:
@@ -19,5 +20,3 @@ def load(filepath):
     except FileNotFoundError as e:
         log.error(str(e))
         raise e
-
-
