@@ -1,12 +1,9 @@
-import argparse
-
 import pkg_resources
 import rich_click as click
 from rich.console import Console
 from rich.table import Table
 
 from dundie import core  # noqa
-from dundie.core import load  # noqa
 
 click.rich_click.USE_RICH_MARKUP = True
 click.rich_click.USE_MARKDOWN = True
@@ -19,19 +16,6 @@ click.rich_click.APPEND_METAVARS_HELP = True
 @click.group()
 @click.version_option(pkg_resources.get_distribution("dundie").version)
 def main():
-    parser = argparse.ArgumentParser(
-        description="Dunder Mifflin Rewards CLI",
-        epilog="Enjoy and use with cautious.",
-    )
-    parser.add_argument(
-        "subcommand",
-        type=str,
-        help="The subcommand top run",
-        choices=("load", "show", "send"),
-        default="help",
-    )
-    parser.add_argument("filepath", type=str, help="File path to load", default=None)  # noqa
-    args = parser.parse_args()
     """Dunder Mifflin Rewards System.
     This cli application controls DM rewards.
     """
