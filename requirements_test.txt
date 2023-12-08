@@ -1,6 +1,8 @@
 pytest
 flake8
 pyproject-flake-8
+black
+isort
 
 # Install project as editable
 -e .

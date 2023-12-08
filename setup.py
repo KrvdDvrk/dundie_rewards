@@ -35,9 +35,9 @@ setup(
     pyhton_requires=">=3.7",
     packages=find_packages(),
     entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
-    install_requires=[],
+    install_requires=["click", "rich", "rich-click"],
     extras_require={
-        "test": ["pytest", "flake8", "pyproject-flake8", "black", "isort"],
+        "test": ["pytest", "pytest-forked", "flake8", "pyproject-flake8", "black", "isort"],
         "dev": ["ipdb", "ipython<=8.0.0", "pudb", "flake8", "pflake8", "black", "isort"],
     },
 )

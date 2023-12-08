@@ -25,10 +25,11 @@ fmt:
 	@.venv/bin/black dundie tests integration
 
 test:
-	@.venv/bin/pytest -s
+	@.venv/bin/pytest -s --forked
 
 watch:
 	# @ls **/*.py | entr pytest
+	@ls **/*.py | entr pytest --forked
 
 clean:
 	@find ./ - name '*.pyc' -exec rm -f {} \;
