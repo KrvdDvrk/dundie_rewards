@@ -7,6 +7,11 @@ pytest-watch
 # Code Quality
 flake8
 pyproject-flake8
+<<<<<<< HEAD
+=======
+black
+isort
+>>>>>>> linters
 
 # Install project as editable
 -e .

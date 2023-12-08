@@ -1,6 +1,11 @@
 pytest
 flake8
 pyproject-flake-8
+<<<<<<< HEAD
+=======
+black
+isort
+>>>>>>> linters
 
 # Install project as editable
 -e .
