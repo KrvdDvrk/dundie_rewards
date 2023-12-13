@@ -16,7 +16,7 @@ def test_load_positive_has_3_people(request):
 @pytest.mark.high
 def test_load_positive_first_name_starts_with_j(request):
     """Test function load function."""
-    assert load(PEOPLE_FILE)[0][0] == "J"
+    assert load(PEOPLE_FILE)[0]["name"] == "Jim Halpert"
 
 
 # No unit uma boa prática: Sempre manter um único assert dentro de cada teste
