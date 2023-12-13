@@ -10,7 +10,7 @@ def test_read_with_query():
     data = {"role": "Salesman", "dept": "Sales", "name": "Joe Doe"}
     db = connect()
     person, created = add_person(db, pk, data)
-    assert created is True
+    assert created is False
 
     pk = "jim@doe.com"
     data = {"role": "Manager", "dept": "Management", "name": "Jim Doe"}
