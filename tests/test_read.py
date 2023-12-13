@@ -19,7 +19,7 @@ def test_read_with_query():
     commit(db)
 
     response = read()
-    assert len(response) == 2
+    assert len(response) == 5
 
     response = read(dept="Management")
     assert len(response) == 1
