@@ -38,6 +38,6 @@ setup(
     install_requires=["click", "rich", "rich-click"],
     extras_require={
         "test": ["pytest", "pytest-forked", "flake8", "pyproject-flake8", "black", "isort"],
-        "dev": ["ipdb", "ipython<=8.0.0", "pudb", "flake8", "pflake8", "black", "isort"],
+        "dev": ["ipdb", "ipython<=8.0.0", "pudb", "flake8", "pflake8", "black", "isort", "mkdocs"],
     },
 )
