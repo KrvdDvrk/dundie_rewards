@@ -1,2 +1,3 @@
 site_name: Dundie Rewards Cli
 theme:
+  name: readthedocs

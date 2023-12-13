@@ -17,7 +17,7 @@
         }
     },
     "balance": {
-        "jim@dundlermifflin.com": 810,
+        "jim@dundlermifflin.com": 910,
         "schrute@dundlermifflin.com": 410,
         "glewis@dundlermifflin.com": 100
     },
@@ -67,6 +67,11 @@
                 "date": "2023-12-12T18:21:59.032218",
                 "actor": "krvd_hvckcxmmvndxr",
                 "value": 5
+            },
+            {
+                "date": "2023-12-13T17:05:41.336323",
+                "actor": "krvd_hvckcxmmvndxr",
+                "value": 100
             }
         ],
         "schrute@dundlermifflin.com": [

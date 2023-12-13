@@ -1,4 +1,4 @@
-.PHONY: install installdev installtest virtualenv ipython pflake8 fmt clean test watch
+.PHONY: install installdev installtest virtualenv ipython pflake8 fmt clean test testfork watch
 
 install:
 	@.venv/bin/python -m pip install -e .
@@ -25,6 +25,9 @@ fmt:
 	@.venv/bin/black dundie tests integration
 
 test:
+	@.venv/bin/pytest -s
+
+testfork:
 	@.venv/bin/pytest -s --forked
 
 watch:
