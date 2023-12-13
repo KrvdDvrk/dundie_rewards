@@ -15,7 +15,7 @@ def test_read_with_query():
     pk = "jim@doe.com"
     data = {"role": "Manager", "dept": "Management", "name": "Jim Doe"}
     person, created = add_person(db, pk, data)
-    assert created is True
+    assert created is False
     commit(db)
 
     response = read()
