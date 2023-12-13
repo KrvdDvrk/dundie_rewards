@@ -164,3 +164,4 @@ cython_debug/
 *test-result.xml
 *.venv
 *.venv/
+*dundie.log
