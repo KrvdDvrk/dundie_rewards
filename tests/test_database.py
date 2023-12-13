@@ -25,7 +25,7 @@ def test_add_person_for_the_first_time():
     pk = "joe@doe.com"
     data = {"role": "Salesman", "dept": "Sales", "name": "Joe Doe"}
     db = connect()
-    person, created = add_person(db, pk, data)
+    _, created = add_person(db, pk, data)
     assert created is True
     commit(db)
 
@@ -47,7 +47,7 @@ def test_add_or_remove_person_invalid_email():
     pk = "joe@doe.com"
     data = {"role": "Salesman", "dept": "Sales", "name": "Joe Doe"}
     db = connect()
-    person, created = add_person(db, pk, data)
+    _, created = add_person(db, pk, data)
     assert created is True
     commit(db)
 
