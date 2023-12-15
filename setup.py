@@ -33,11 +33,21 @@ setup(
     long_description_content_type="text/markdown",
     author="KrvdDvrk",
     pyhton_requires=">=3.7",
-    packages=find_packages(),
+    packages=find_packages(include=["dundie", "tests"]),
     entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
     install_requires=["click", "rich", "rich-click"],
     extras_require={
         "test": ["pytest", "pytest-forked", "flake8", "pyproject-flake8", "black", "isort"],
-        "dev": ["ipdb", "ipython<=8.0.0", "pudb", "flake8", "pflake8", "black", "isort", "mkdocs"],
+        "dev": [
+            "ipdb",
+            "ipython<=8.0.0",
+            "pudb",
+            "flake8",
+            "pyproject-flake8",
+            "black",
+            "isort",
+            "mkdocs",
+            "wheel",
+        ],
     },
 )
