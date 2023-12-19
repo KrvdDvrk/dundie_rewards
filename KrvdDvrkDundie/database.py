@@ -1,9 +1,9 @@
 import json
 from datetime import datetime
 
-from dundie.settings import DATABASE_PATH, EMAIL_FROM
-from dundie.utils.email import check_valid_email, send_email
-from dundie.utils.user import generate_simple_password
+from KrvdDvrkDundie.settings import DATABASE_PATH, EMAIL_FROM
+from KrvdDvrkDundie.utils.email import check_valid_email, send_email
+from KrvdDvrkDundie.utils.user import generate_simple_password
 
 EMPTY_DB = {"people": {}, "balance": {}, "movement": {}, "users": {}}
 

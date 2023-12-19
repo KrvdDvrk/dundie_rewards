@@ -3,13 +3,13 @@ import os
 from logging import handlers
 
 LOG_LEVEL = os.getenv("LOG_LEVEL", "WARNING").upper()
-log = logging.getLogger("dundie")
+log = logging.getLogger("KrvdDvrkDundie")
 fmt = logging.Formatter(
     "%(asctime)s %(name)s %(levelname)s l:%(lineno)d f:%(filename)s: %(message)s"
 )
 
 
-def get_logger(logfile="dundie.log"):
+def get_logger(logfile="KrvdDvrkDundie.log"):
     """Returns a configured logger."""
     fh = handlers.RotatingFileHandler(
         logfile,

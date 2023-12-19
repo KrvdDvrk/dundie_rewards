@@ -1,6 +1,5 @@
 import pytest
-
-from dundie.database import EMPTY_DB, add_movement, add_person, commit, connect
+from KrvdDvrkDundie.database import EMPTY_DB, add_movement, add_person, commit, connect
 
 
 @pytest.mark.unit

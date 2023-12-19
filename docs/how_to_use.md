@@ -10,10 +10,10 @@ Dwight Scrute, Sales, Manager, schrute@dundlermifflin.com
 Gabe Lewis, Director, Manager, glewis@dundlermifflin.com
 ```
 
-Run `dundie load` command
+Run `KrvdDvrkDundie load` command
 
 ```py
-dundie load people.csv
+KrvdDvrkDundie load people.csv
 ```
 
 ## Viewing data
@@ -21,7 +21,7 @@ dundie load people.csv
 ### Viewing all information
 
 ```bash
-$ dundie show
+$ KrvdDvrkDundie show
 
 ┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━┓
 ┃ Email             ┃ Balance ┃ Last_Movement     ┃ Name          ┃ Dept    ┃ Role     ┃
@@ -37,7 +37,8 @@ $ dundie show
 Avaliable filters are `--dept` and `--email`
 
 ```bash
-dundie show --dept=Sales
+KrvdDvrkDundie show --dept=Sales
+
 
 ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┓
 ┃ Email              ┃ Balance ┃ Last_Movement      ┃ Name          ┃ Dept  ┃ Role     ┃
@@ -54,7 +55,7 @@ dundie show --dept=Sales
 An admin user can easily add points to any user or dept.
 
 ```bash
-dundie add 100 --email=jim@dundlermifflin.com
+KrvdDvrkDundie add 100 --email=jim@dundlermifflin.com
 
 ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┓
 ┃ Email               ┃ Balance ┃ Last_Movement       ┃ Name        ┃ Dept  ┃ Role     ┃

@@ -3,7 +3,7 @@
 ## Official installation
 
 ```py
-pip install dundie
+pip install KrvdDvrkDundie
 ```
 
 

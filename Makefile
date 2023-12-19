@@ -1,4 +1,4 @@
-.PHONY: install installdev installtest virtualenv ipython pflake8 fmt clean test testfork watch
+.PHONY: install installdev installtest virtualenv ipython pflake8 fmt clean test testfork watch publishtest
 
 install:
 	@.venv/bin/python -m pip install -e .
@@ -57,3 +57,6 @@ docs-serve:
 
 build:
 	@python setup.py sdist bdist_wheel
+
+publishtest:
+	@twine upload --repository testpypi dist/*
