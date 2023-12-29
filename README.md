@@ -1,4 +1,5 @@
 # dundie_rewards
+This project is not authoral, is part of my learning.
 My first project** point rewards system for dundler company
 
 [![CI](https://github.com/KrvdDvrk/dundie_rewards/actions/workflows/main.yml/badge.svg)](https://github.com/KrvdDvrk/dundie_rewards/actions/workflows/main.yml)
