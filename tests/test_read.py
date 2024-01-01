@@ -1,4 +1,5 @@
 import pytest
+
 from KrvdDvrkDundie.core import read
 from KrvdDvrkDundie.database import add_person, commit, connect
 

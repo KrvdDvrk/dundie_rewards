@@ -1,5 +1,6 @@
 import pytest
 from click.testing import CliRunner
+
 from KrvdDvrkDundie.cli import load, main
 
 from .constants import PEOPLE_FILE
