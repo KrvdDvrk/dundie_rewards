@@ -1,4 +1,5 @@
 import pytest
+
 from KrvdDvrkDundie.database import EMPTY_DB, add_movement, add_person, commit, connect
 
 

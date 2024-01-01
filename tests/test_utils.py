@@ -1,4 +1,5 @@
 import pytest
+
 from KrvdDvrkDundie.utils.email import check_valid_email
 from KrvdDvrkDundie.utils.user import generate_simple_password
 
