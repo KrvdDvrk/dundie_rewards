@@ -1,4 +1,4 @@
 # Documentation for dundie
 
-This project offers `dundie` CLI to manage
+This project offers `KrvdDvrkDundie` CLI to manage
 Dundie Mifflin Rewards Points.

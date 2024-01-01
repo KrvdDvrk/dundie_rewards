@@ -26,15 +26,16 @@ def read_requirements(path):
 
 
 setup(
-    name="dundie",
-    version="0.1.0",
+    name="KrvdDvrkDundie",
+    version="0.1.1",
     description="Reward Point System for Dunder Mifflin",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="KrvdDvrk",
-    pyhton_requires=">=3.7",
-    packages=find_packages(include=["dundie", "tests"]),
-    entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
+    pyhton_requires=">=3.10",
+    packages=find_packages(exclude=["integration"]),
+    include_package_data=True,
+    entry_points={"console_scripts": ["KrvdDvrkDundie = KrvdDvrkDundie.__main__:main"]},
     install_requires=["click", "rich", "rich-click"],
     extras_require={
         "test": ["pytest", "pytest-forked", "flake8", "pyproject-flake8", "black", "isort"],
@@ -48,6 +49,7 @@ setup(
             "isort",
             "mkdocs",
             "wheel",
+            "twine",
         ],
     },
 )
