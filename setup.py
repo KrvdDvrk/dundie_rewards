@@ -36,7 +36,7 @@ setup(
     packages=find_packages(exclude=["integration"]),
     include_package_data=True,
     entry_points={"console_scripts": ["KrvdDvrkDundie = KrvdDvrkDundie.__main__:main"]},
-    install_requires=["click", "rich", "rich-click"],
+    install_requires=["click", "rich", "rich-click", "pydantic"],
     extras_require={
         "test": ["pytest", "pytest-forked", "flake8", "pyproject-flake8", "black", "isort"],
         "dev": [
