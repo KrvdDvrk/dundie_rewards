@@ -3,14 +3,15 @@
 ## Official installation
 
 ```py
-pip install KrvdDvrkDundie
+pip install dundie
 ```
 
 
 ## Install from source
 
+
 ```bash
-git clone https://github.com/rochabruno/dundie-Rewards
+git clone https://github.com/rochacbruno/dundie-rewards
 cd dundie-rewards
 make install
 ```

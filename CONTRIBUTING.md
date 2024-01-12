@@ -1,6 +1,6 @@
 # Contributing to Dundie Project
 
-Summary of Project
+Summary of project
 
 ## Guidelines
 
@@ -11,7 +11,6 @@ Summary of Project
 ## Code of Conduct
 
 - Be gentle
-- Work with honesty and empaty
 
 ## How to contribute
 
@@ -19,13 +18,14 @@ Summary of Project
 
 - Click fork button on [github repo](https://github.com/...)
 
-### Clone to local dev enviroment
+### Clone to local dev environment
 
 ```bash
 git clone https://github.com/seunome/...
+...
 ```
 
-### Prepare  virtual env
+### Prepare virtual env
 
 ```bash
 de dundie-rewards
@@ -50,7 +50,7 @@ make watch
 - We follow conventional commit messages ex: `[bugfix] reason #issue`
 - We require signed commits
 
+
 ### Pull Request Rules
 
 - We require all tests to be passing
-

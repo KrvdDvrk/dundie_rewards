@@ -1,11 +1,10 @@
 import os
-
-from setuptools import find_packages, setup
+from setuptools import setup, find_packages
 
 
 def read(*paths):
     """Read the contents of a text file safely.
-    >>> read("project_name", "VERSION")
+    >>> read("dundie", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -21,35 +20,30 @@ def read_requirements(path):
     return [
         line.strip()
         for line in read(path).split("\n")
-        if not line.startswith("#", "git+", '"', "-")
+        if not line.startswith(("#", "git+", '"', '-'))
     ]
 
 
 setup(
-    name="KrvdDvrkDundie",
+    name="dundie",
+    # Major.Minor.Patch
+    # X.Y.Z
     version="0.1.1",
     description="Reward Point System for Dunder Mifflin",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    author="KrvdDvrk",
-    pyhton_requires=">=3.10",
+    author="Bruno Rocha",
+    python_requires=">=3.8",
     packages=find_packages(exclude=["integration"]),
     include_package_data=True,
-    entry_points={"console_scripts": ["KrvdDvrkDundie = KrvdDvrkDundie.__main__:main"]},
-    install_requires=["click", "rich", "rich-click"],
-    extras_require={
-        "test": ["pytest", "pytest-forked", "flake8", "pyproject-flake8", "black", "isort"],
-        "dev": [
-            "ipdb",
-            "ipython<=8.0.0",
-            "pudb",
-            "flake8",
-            "pyproject-flake8",
-            "black",
-            "isort",
-            "mkdocs",
-            "wheel",
-            "twine",
-        ],
+    entry_points={
+        "console_scripts": [
+            "dundie = dundie.__main__:main"
+        ]
     },
+    install_requires=read_requirements("requirements.txt"),
+    extras_require={
+        "test": read_requirements("requirements.test.txt"),
+        "dev": read_requirements("requirements.dev.txt")
+    }
 )
